@@ -18,8 +18,8 @@ function App() {
       <Global styles={GSCommon}/>
       <MainLayout>
         <HeaderLayout />
+        <CategoryTablist />
         <MainContainer>
-          <CategoryTablist />
           <Routes>
             <Route path="/my/feed" element={ <MyFeed /> }/>
             <Route path="/my/visit" element={ <MyVisit /> }/>
