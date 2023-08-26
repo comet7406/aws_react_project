@@ -12,13 +12,12 @@ export const SContainer = css`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     border: 1px solid #dbdbdb;
     border-radius: 15px;
     padding: 34px 30px 40px 30px;
     width: 720px;
     height: 440px;
-    background-image: linear-gradient(142deg,#55abab,#6fc2ac);
+    background-image: linear-gradient(127deg,#eb8787 7%,#ef9177 87%);
 `;
 
 export const SFlagIcon = css`
@@ -51,13 +50,13 @@ export const SContentFont = css`
     line-height: 25px;
     margin-top: 5px;
     font-size: 15.5px;
-    color: #bbedee;
+    color: #ffffff;
 `;
 
-export const SVisitImg = css`
+export const SPlaceImg = css`
     margin-top: 27px;
-    width: 235px;
-    height: 155px;
+    width: 225px;
+    height: 180px;
     cursor: pointer;
 `;
 

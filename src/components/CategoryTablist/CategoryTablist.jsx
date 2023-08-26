@@ -24,6 +24,16 @@ function CategoryTablist(props) {
             id: 3,
             name: "리뷰",
             path: "/my/review"
+        },
+        {
+            id: 4,
+            name: "예약·주문",
+            path: "/my/bookings"
+        },
+        {
+            id: 5,
+            name: "저장",
+            path: "/my/place"
         }
     ]
 

@@ -141,6 +141,9 @@ export const SChevronRightIcon = css`
 `;
 
 export const SReviewButton = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #0cc5a4;;
   border-radius: 8px;
   width: 226px;
@@ -151,8 +154,16 @@ export const SReviewButton = css`
   cursor: pointer;
 `;
 
+export const SPencilIcon = css`
+  margin: 3px 5px 0px 0px;
+  color: white;
+`;
+
 export const SMissionButton = css`
-    border: 1px solid #0cc5a4;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0cc5a4;;
   border-radius: 8px;
   width: 102px;
   font-size: 16px;
@@ -160,4 +171,8 @@ export const SMissionButton = css`
   background-color: #0cc5a4;
   color: #fff;
   cursor: pointer;
+`;
+
+export const SCheckIcon = css`
+  margin: 3px 5px 0px 0px;
 `;

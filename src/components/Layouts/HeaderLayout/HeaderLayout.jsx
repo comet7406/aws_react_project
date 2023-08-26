@@ -5,7 +5,8 @@ import * as S from "./Style";
 import { HiChevronRight, HiMenu } from "react-icons/hi";
 import { SiNaver } from "react-icons/si";
 import { BsTicket } from "react-icons/bs";
-
+import { PiPencilSimpleLineFill } from "react-icons/pi";
+import { BsCheck2Circle } from "react-icons/bs";
 function HeaderLayout(props) {
     return (
         <div>
@@ -31,8 +32,14 @@ function HeaderLayout(props) {
                             <HiChevronRight css={S.SChevronRightIcon}/>              
                         </div>
                         <div css={S.SProfileBottom}>
-                            <button css={S.SReviewButton}>리뷰 쓰기</button>
-                            <button css={S.SMissionButton}>미션</button>
+                            <button css={S.SReviewButton}>
+                                <div css={S.SPencilIcon}><PiPencilSimpleLineFill  /></div>
+                                <span>리뷰 쓰기</span>
+                            </button>
+                            <button css={S.SMissionButton}>
+                                <div css={S.SCheckIcon}><BsCheck2Circle /></div>
+                                <span>미션</span>
+                            </button>
                         </div>
                     </div>
                 </div>
