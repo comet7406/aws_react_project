@@ -10,6 +10,11 @@ import { HiOutlineDotsVertical } from 'react-icons/hi';
 import lodgment from "../../../assets/lodgment1.jpg";
 import lodgment2 from "../../../assets/lodgment2.png";
 import lodgment3 from "../../../assets/lodgment3.jpg";
+import bedIcon from "../../../assets/bedIcon.png";
+import starIcon from "../../../assets/starIcon.png";
+import smileIcon from "../../../assets/smileIcon.png";
+import loveIcon from "../../../assets/loveIcon.png";
+import sofaIcon from "../../../assets/sofaIcon.png";
 
 function FeedContainer(props) {
     const navigate = useNavigate();
@@ -143,6 +148,32 @@ function FeedContainer(props) {
                         <img src={lodgment3} />
                     </div>
                 </div>
+            </div>
+            <div css={S.STextContainer}>
+                <p>뷰가 정말좋네요 좋은가격에 잘 묵었습니다. 다음엔 더 좋은 방으로 예약해서 묵어볼까싶어요~</p>
+            </div>
+            <div css={S.SReviewContainer}>
+                <div css={S.SReviewIconBox}>
+                    <img src={bedIcon} css={S.SReviewIcon}/>
+                    <p>침구가 좋아요</p>
+                </div>
+                <div css={S.SReviewIconBox}>
+                    <img src={starIcon} css={S.SReviewIcon}/>
+                    <p>깨끗해요</p>
+                </div>
+                <div css={S.SReviewIconBox}>
+                    <img src={smileIcon} css={S.SReviewIcon}/>
+                    <p>호캉스하기 좋아요</p>
+                </div>
+                <div css={S.SReviewIconBox}>
+                    <img src={loveIcon} css={S.SReviewIcon}/>
+                    <p>친절해요</p>
+                </div>
+                <div css={S.SReviewIconBox}>
+                    <img src={sofaIcon} css={S.SReviewIcon}/>
+                    <p>인테리어가 멋져요</p>
+                </div>
+                {/* 반얀트리 카시아 속초 */}
             </div>
         </div>
     );

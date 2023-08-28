@@ -34,11 +34,11 @@ function HeaderLayout(props) {
                         </div>
                         <div css={S.SProfileBottom}>
                             <button css={S.SReviewButton}>
-                                <div css={S.SPencilIcon}><PiPencilSimpleLineFill  /></div>
+                                <div><PiPencilSimpleLineFill css={S.SPencilIcon} /></div>
                                 <span>리뷰 쓰기</span>
                             </button>
                             <button css={S.SMissionButton}>
-                                <div css={S.SCheckIcon}><BsCheck2Circle /></div>
+                                <div><BsCheck2Circle css={S.SCheckIcon} /></div>
                                 <span>미션</span>
                             </button>
                         </div>

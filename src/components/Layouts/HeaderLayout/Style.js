@@ -155,7 +155,7 @@ export const SReviewButton = css`
 `;
 
 export const SPencilIcon = css`
-  margin: 3px 5px 0px 0px;
+  margin: 5px 3px 0px 0px;
   color: white;
 `;
 
@@ -174,5 +174,5 @@ export const SMissionButton = css`
 `;
 
 export const SCheckIcon = css`
-  margin: 3px 5px 0px 0px;
+  margin: 5px 5px 0px 0px;
 `;

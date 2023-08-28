@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 
 export const SLayout = css`
-    
+
 `;
 
 export const STopContainer = css`
@@ -212,40 +212,74 @@ export const SImgContainer = css`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px auto;
+    margin: 0px auto;
     padding: 0px 20px 10px 20px;
     width: 680px;
-
 `;
 
 export const SMainImg = css`
     display: flex;
     margin-right: 2px;
-    border: 1px solid #dbdbdb;
-    width: 401px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 402px;
     height: 360px;
     overflow: hidden;
 `;
 
 export const SSubImg = css`
     flex-direction: column;
-    width: 277px;
     height: 360px;
 `;
 
 export const SSubImg1 = css`
     display: flex;
     margin-bottom: 2px;
-    border: 1px solid #dbdbdb;
-    width: 277px;
+    border-top-right-radius: 8px;
+    width: 278px;
     height: 179px;
     overflow: hidden;
 `;
 
 export const SSubImg2 = css`
     display: flex;
-    border: 1px solid #dbdbdb;
-    width: 277px;
+    border-bottom-right-radius: 8px;
+    width: 278px;
     height: 179px;
     overflow: hidden;
+`;
+
+export const STextContainer = css`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 20px 10px 20px;
+    font-size: 15px;
+    width: 680px;
+    color: #666666;
+`;
+
+export const SReviewContainer = css`
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 20px 10px 20px;
+    display: flex;
+    width: 680px;
+`;
+
+export const SReviewIconBox = css`
+    display: flex;
+    border-radius: 4px;
+    margin-right: 4px;
+    padding: 4px 7px;
+    height: 24px;
+    font-size: 13px;
+    color: #666666;
+    background-color: #f5f7f8;;
+`;
+
+export const SReviewIcon = css`
+    display: flex;
+    margin: 0px 5px 0px 0px;
 `;
