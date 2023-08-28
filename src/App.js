@@ -24,6 +24,8 @@ function App() {
         <MainContainer>
           <Routes>
             <Route path="/my/feed" element={ <MyFeed /> }/>
+            <Route path="/my/feed/all" element={ <MyFeed /> }/>
+            <Route path="/my/feed/following" element={ <MyFeed /> }/>
             <Route path="/my/visit" element={ <MyVisit /> }/>
             <Route path="/my/review" element={ <MyReview /> }/>          
             <Route path="/my/bookings" element={ <MyBookings /> }/>          

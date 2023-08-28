@@ -9,8 +9,8 @@ export const SLayout = css`
     height: 160px;
 `;
 
-export const SDividerBar = css`
-
+export const SButton = css`
+    cursor: pointer;
 `;
 
 export const STopContent = css`
@@ -36,4 +36,10 @@ export const SBottomContent = css`
     display: flex;
     font-size: 13px;
     color: #666666;
+`;
+
+export const SCIcon = css`
+    margin-right: 3px;
+    margin-bottom: 2px;
+    font-size: 12px;
 `;

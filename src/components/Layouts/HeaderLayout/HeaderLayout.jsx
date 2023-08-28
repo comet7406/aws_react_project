@@ -7,6 +7,7 @@ import { SiNaver } from "react-icons/si";
 import { BsTicket } from "react-icons/bs";
 import { PiPencilSimpleLineFill } from "react-icons/pi";
 import { BsCheck2Circle } from "react-icons/bs";
+import profile from "../../../assets/profile.png";
 function HeaderLayout(props) {
     return (
         <div>
@@ -27,7 +28,7 @@ function HeaderLayout(props) {
                 <div css={S.SProfileLayout}>
                     <div css={S.SProfilebar}>
                         <div css={S.SProfileTop}>
-                            <img css={S.SProfilThumb} src="https://m.place.naver.com/my/_next/static/image/_/assets/images/icon_profile_default.cf1f777d594520630ff249eb31ab38c2.png" />
+                            <img css={S.SProfilThumb} src={profile} />
                             <button css={S.SLoginButton}>로그인하기</button>
                             <HiChevronRight css={S.SChevronRightIcon}/>              
                         </div>
