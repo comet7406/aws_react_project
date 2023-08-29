@@ -6,7 +6,7 @@ import { MdOutlineLocationSearching } from "react-icons/md"
 import { AiOutlinePlus } from "react-icons/ai"
 import profile from "../../../assets/profile.png";
 import profileDesign from "../../../assets/profileDesign.png";
-import { HiOutlineDotsVertical } from 'react-icons/hi';
+import { HiChevronRight, HiOutlineDotsVertical } from 'react-icons/hi';
 import lodgment from "../../../assets/lodgment1.jpg";
 import lodgment2 from "../../../assets/lodgment2.png";
 import lodgment3 from "../../../assets/lodgment3.jpg";
@@ -15,6 +15,8 @@ import starIcon from "../../../assets/starIcon.png";
 import smileIcon from "../../../assets/smileIcon.png";
 import loveIcon from "../../../assets/loveIcon.png";
 import sofaIcon from "../../../assets/sofaIcon.png";
+import { LiaSmile } from "react-icons/lia"
+import { CiStar } from "react-icons/ci"
 
 function FeedContainer(props) {
     const navigate = useNavigate();
@@ -173,8 +175,32 @@ function FeedContainer(props) {
                     <img src={sofaIcon} css={S.SReviewIcon}/>
                     <p>인테리어가 멋져요</p>
                 </div>
-                {/* 반얀트리 카시아 속초 */}
             </div>
+            <div css={S.SReactionContainer}>
+                <div css={S.SReactionLeftBox}>
+                    <LiaSmile css={S.SSmileIcon}/>
+                    <span css={S.SReactionText}>반응 남기기</span>
+                </div>
+                <div>
+                    <span css={S.SVisitDateText}>8.29 화 방문</span>
+                </div>
+            </div>
+            <div css={S.SVisitedPlaceContainer}>
+                <div css={S.SVisitedInfoLeftBox}>
+                    <div css={S.SVisitedPlaceNameBox}>
+                        <p css={S.SVisitedPlaceNameText}>
+                            카시아 속초
+                        </p>
+                        <HiChevronRight css={S.SChevronRightIcon} />
+                    </div>
+                    <p css={S.SVisitedPlaceAddressText}>호텔 · 속초시 대포항 개발사업지구</p>
+                </div>
+                <div css={S.SVisitedInfoRightBox}>
+                    <CiStar css={S.SVisitedInfoStarIcon} />
+                    <span css={S.SVisitedInfoSaveText}>저장</span>
+                </div>
+            </div>
+                {/* 반얀트리 카시아 속초 */}
         </div>
     );
 }

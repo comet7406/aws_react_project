@@ -133,8 +133,8 @@ export const SFooterContainer = css`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px auto;
-    padding: 10px 0px 10px 25px;
+    margin: 0px auto;
+    padding: 26px 0px 10px 25px;
     width: 680px;
     height: 65px;
 `;
@@ -168,7 +168,7 @@ export const SProfileDesign = css`
 `;
 
 export const SUserInfo = css`
-    margin-left: 30px;
+    margin-left: 35px;
     text-align: left;
     line-height: 20px;
 `;
@@ -213,8 +213,8 @@ export const SImgContainer = css`
     justify-content: space-between;
     align-items: center;
     margin: 0px auto;
-    padding: 0px 20px 10px 20px;
-    width: 680px;
+    padding: 15px 20px 10px 20px;
+    width: 720px;
 `;
 
 export const SMainImg = css`
@@ -256,16 +256,16 @@ export const STextContainer = css`
     margin: 0 auto;
     padding: 0px 20px 10px 20px;
     font-size: 15px;
-    width: 680px;
+    width: 720px;
     color: #666666;
 `;
 
 export const SReviewContainer = css`
+    display: flex;
     align-items: center;
     margin: 0 auto;
-    padding: 0px 20px 10px 20px;
-    display: flex;
-    width: 680px;
+    padding: 0px 20px 0px 20px;
+    width: 720px;
 `;
 
 export const SReviewIconBox = css`
@@ -282,4 +282,90 @@ export const SReviewIconBox = css`
 export const SReviewIcon = css`
     display: flex;
     margin: 0px 5px 0px 0px;
+`;
+
+export const SReactionContainer = css`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 17px 20px 15px 20px;
+    width: 720px;
+`;
+
+export const SReactionLeftBox = css`
+    display: flex;
+    align-items: center;
+`;
+ 
+export const SSmileIcon = css`
+    margin-right: 6px;
+    font-size: 32px;
+`;
+
+export const SReactionText = css`
+    font-size: 16px;
+    color: #424242;
+`;
+
+export const SVisitDateText = css`
+    font-size: 13px;
+    color: #9A9A9A;
+`;
+
+export const SVisitedPlaceContainer = css`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #ecf0f2;
+    border-radius: 8px;
+    padding: 6px 16px 12px 15px;
+    width: 680px;
+    height: 68px;
+`;
+
+export const SVisitedInfoLeftBox = css`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`;
+
+export const SVisitedPlaceNameBox = css`
+    display: flex;
+    align-items: center;
+`;
+
+export const SVisitedPlaceNameText = css`
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #242424;
+`;
+
+export const SChevronRightIcon = css`
+    font-size: 22px;
+    font-weight: 500;
+`;
+
+export const SVisitedPlaceAddressText = css`
+    font-size: 13px;
+    color: #8f8f8f;
+`;
+
+export const SVisitedInfoRightBox = css`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const SVisitedInfoStarIcon = css`
+    font-size: 21px;
+    color: #8f8f8f;
+`;
+
+export const SVisitedInfoSaveText = css`
+    margin-top: 6px;
+    font-size: 11px;
+    color: #8f8f8f;
 `;
