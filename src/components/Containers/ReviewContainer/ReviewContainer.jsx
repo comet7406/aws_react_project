@@ -3,12 +3,13 @@ import React from 'react';
 import * as S from "./Style";
 import {GiGolfFlag} from "react-icons/gi";
 import review from "../../../assets/review.png";
+import flagIcon from "../../../assets/flagIcon.png";
 
 function VisitContainer(props) {
     return (
         <div css={S.SLayout}>
             <div css={S.SContainer}>
-                <GiGolfFlag css={S.SFlagIcon}/>
+            <img src={flagIcon} css={S.SFlagIcon}/>
                 <div css={S.SContent}>
                     <div css={S.SHeaderFont}>
                         정성스레 작성한 <strong css={S.SFontBold}>리뷰</strong>

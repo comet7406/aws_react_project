@@ -91,21 +91,24 @@ function FeedContainer(props) {
                 <div css={S.STypeTablist}>
                     <div css={S.SLeftbutton}>
                         {menus.map(menu => (
-                            <div css={S.SMenuBox(location.pathname.startsWith(menu.path))} key={menu.id} onClick={() => {
+                            <div 
+                                css={S.SMenuBox(
+                                    location.pathname.startsWith(menu.path) || (location.pathname === "/my/feed" && menu.id === 1 || (location.pathname === "/" && menu.id === 1))
+                                )} 
+                                key={menu.id} onClick={() => {
                                 handleLinkClick(menu.path)
-                            }}>{menu.name}</div>
+                            }}>{menu.name}
+                            </div>
                         ))}
                         <button css={S.SButton}>
                             <AiOutlinePlus css={S.SPlusIcon}/>
                             <span>관심지역</span>
                         </button>
                     </div>
-                    <div >
-                        <button css={S.SRightbutton}>
-                            <div css={S.SDivideBar}></div>
-                            <MdOutlineLocationSearching css={S.SLocationIcon}/>
-                            <span>현위치</span>
-                        </button>
+                    <div css={S.SRightbutton}>
+                        <div css={S.SDivideBar}></div>
+                        <MdOutlineLocationSearching css={S.SLocationIcon}/>
+                        <span>현위치</span>
                     </div>
                 </div>
             </div>
@@ -189,7 +192,7 @@ function FeedContainer(props) {
                 <div css={S.SVisitedInfoLeftBox}>
                     <div css={S.SVisitedPlaceNameBox}>
                         <p css={S.SVisitedPlaceNameText}>
-                            카시아 속초
+                            반얀트리 카시아 속초
                         </p>
                         <HiChevronRight css={S.SChevronRightIcon} />
                     </div>
@@ -200,7 +203,6 @@ function FeedContainer(props) {
                     <span css={S.SVisitedInfoSaveText}>저장</span>
                 </div>
             </div>
-                {/* 반얀트리 카시아 속초 */}
         </div>
     );
 }

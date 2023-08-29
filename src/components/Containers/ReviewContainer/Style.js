@@ -25,8 +25,8 @@ export const SFlagIcon = css`
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-    font-size: 25px;
-    color: white;
+    width: 20px;
+    height: 20px;
 `;
 
 export const SContent = css`
@@ -73,5 +73,6 @@ export const SReviewButton = css`
     font-size: 16px;
     color: #fff;
     background-color: transparent;
+    cursor: pointer;
 `;
 

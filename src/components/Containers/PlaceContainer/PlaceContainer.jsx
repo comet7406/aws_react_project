@@ -3,12 +3,13 @@ import React from 'react';
 import * as S from "./Style";
 import {GiGolfFlag} from "react-icons/gi";
 import place from "../../../assets/place.png";
+import flagIcon from "../../../assets/flagIcon.png";
 
 function PlaceContainer(props) {
     return (
         <div css={S.SLayout}>
             <div css={S.SContainer}>
-                <GiGolfFlag css={S.SFlagIcon}/>
+            <img src={flagIcon} css={S.SFlagIcon}/>
                 <div css={S.SContent}>
                     <div css={S.SHeaderFont}>
                         가고싶은 맛집, 카페 저장하고

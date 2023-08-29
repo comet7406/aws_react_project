@@ -57,18 +57,18 @@ export const SCoupon = css`
 
 export const SCouponIcon = css`
   margin: 0px 5px;
-  width: 36px;
-  height: 36px;
+  width: 35px;
+  height: 35px;
   color: #ffff;
 `;
 
 export const SCouponName = css`
   position: absolute;
   text-align: center;
-  font-size: 11px;
+  font-size: 10px;
   color: white;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 48%;
   left: 50%;
 `;
 
@@ -115,7 +115,7 @@ export const SProfileBottom = css`
 `;
 
 export const SProfilThumb = css`
-  margin-right: 29px;
+  margin-right: 22px;
   border: 2px solid white;
   border-radius: 50%;
   width: 64px;
@@ -136,7 +136,7 @@ export const SLoginButton = css`
 `;
 
 export const SChevronRightIcon = css`
-  transform: translateY(2px);
+  transform: translate(-2px, 2px);
   color: #fff;
 `;
 
@@ -148,14 +148,13 @@ export const SReviewButton = css`
   border-radius: 8px;
   width: 226px;
   font-size: 16px;
-  font-weight: 700;
   background-color: #0cc5a4;
   color: #fff;
   cursor: pointer;
 `;
 
 export const SPencilIcon = css`
-  margin: 5px 3px 0px 0px;
+  margin: 2px 5px 0px 0px;
   color: white;
 `;
 
@@ -167,12 +166,15 @@ export const SMissionButton = css`
   border-radius: 8px;
   width: 102px;
   font-size: 16px;
-  font-weight: 700;
   background-color: #0cc5a4;
   color: #fff;
   cursor: pointer;
 `;
 
 export const SCheckIcon = css`
-  margin: 5px 5px 0px 0px;
+  margin: 2px 5px 0px 0px;
+`;
+
+export const SProfileBottomText = css`
+  font-weight: 700;
 `;

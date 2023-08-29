@@ -11,14 +11,18 @@ export const SContainer = css`
     background-color: #06b495;
 `;
 
+export const SMenuBoxContainer = css`
+    display: flex;
+    justify-content: space-between;
+    width: 375px;
+`;
+
 export const SMenuBox = (isSelected) => css`
     display: flex;
     justify-content: center;
-    margin-top: 17px;
-    padding-bottom: 15px;
-    font-size: 18px;
+    padding: 15px 5px;
+    font-size: 17px;
     font-weight: 600;
-    width: 85px;
     color: ${isSelected ? "white" : "rgba(255,255,255,.7)"};
     border-bottom: ${isSelected ? "3px solid white" : "3px solid transparent"};
     cursor: pointer;

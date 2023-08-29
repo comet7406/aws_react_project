@@ -23,6 +23,7 @@ function App() {
         <CategoryTablist />
         <MainContainer>
           <Routes>
+            <Route path="/" element={ <MyFeed /> }/> 
             <Route path="/my/feed" element={ <MyFeed /> }/>
             <Route path="/my/feed/all" element={ <MyFeed /> }/>
             <Route path="/my/feed/following" element={ <MyFeed /> }/>

@@ -9,6 +9,7 @@ import { PiPencilSimpleLineFill } from "react-icons/pi";
 import { BsCheck2Circle } from "react-icons/bs";
 import profile from "../../../assets/profile.png";
 function HeaderLayout(props) {
+    
     return (
         <div>
             <div css={S.SHeadLayout}>
@@ -34,12 +35,12 @@ function HeaderLayout(props) {
                         </div>
                         <div css={S.SProfileBottom}>
                             <button css={S.SReviewButton}>
-                                <div><PiPencilSimpleLineFill css={S.SPencilIcon} /></div>
-                                <span>리뷰 쓰기</span>
+                                <PiPencilSimpleLineFill css={S.SPencilIcon} />
+                                <span css={S.SProfileBottomText}>리뷰 쓰기</span>
                             </button>
                             <button css={S.SMissionButton}>
-                                <div><BsCheck2Circle css={S.SCheckIcon} /></div>
-                                <span>미션</span>
+                                <BsCheck2Circle css={S.SCheckIcon} />
+                                <span css={S.SProfileBottomText}>미션</span>
                             </button>
                         </div>
                     </div>

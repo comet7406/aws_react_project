@@ -3,12 +3,13 @@ import React from 'react';
 import * as S from "./Style";
 import visitImg from "../../../assets/visitImg.png";
 import {GiGolfFlag} from "react-icons/gi";
+import flagIcon from "../../../assets/flagIcon.png";
 
 function VisitContainer(props) {
     return (
         <div css={S.SLayout}>
             <div css={S.SContainer}>
-                <GiGolfFlag css={S.SFlagIcon}/>
+                <img src={flagIcon} css={S.SFlagIcon}/>
                 <div css={S.SContent}>
                     <div css={S.SHeaderFont}>
                         <strong css={S.SFontBold}>영수증/카드내역 인증, 예약, 주문</strong>

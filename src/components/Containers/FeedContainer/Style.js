@@ -81,7 +81,6 @@ export const SDivideBar = css`
     border-radius: 2px;
     border: 1px solid #dbdbdb;
     left: 3px;
-    width: 2px;
     height: 24px;
     color: #e2e5e8;
 `;
@@ -100,15 +99,18 @@ export const SMiddleContainer = css`
 `;
 
 export const SCatgegoryTablist = css`
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
     width: 720px;
     height: 42px;
+    overflow: hidden;
 `;
 
 export const SCategoryButton = css`
+    position: absolute;
     display: flex;
 `;
 
@@ -120,8 +122,6 @@ export const SCategoryBox = (isCategorySelected) => css`
     border-radius: 19px;
     padding: 11px 13px;
     font-size: 12px;
-    color: #666666;
-    background-color: #fff;
     box-shadow: 0 2px 6px rgba(0,0,0,.06);
     font-weight: ${isCategorySelected ? "700" : ""};
     color: ${isCategorySelected ? "white" : "#666666"};
@@ -215,6 +215,7 @@ export const SImgContainer = css`
     margin: 0px auto;
     padding: 15px 20px 10px 20px;
     width: 720px;
+    cursor: pointer;
 `;
 
 export const SMainImg = css`
@@ -258,6 +259,7 @@ export const STextContainer = css`
     font-size: 15px;
     width: 720px;
     color: #666666;
+    cursor: pointer;
 `;
 
 export const SReviewContainer = css`
@@ -296,15 +298,16 @@ export const SReactionContainer = css`
 export const SReactionLeftBox = css`
     display: flex;
     align-items: center;
+    cursor: pointer;
 `;
  
 export const SSmileIcon = css`
     margin-right: 6px;
-    font-size: 32px;
+    font-size: 28px;
 `;
 
 export const SReactionText = css`
-    font-size: 16px;
+    font-size: 15px;
     color: #424242;
 `;
 
@@ -337,15 +340,17 @@ export const SVisitedPlaceNameBox = css`
 `;
 
 export const SVisitedPlaceNameText = css`
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 30px;
     color: #242424;
+    cursor: pointer;
 `;
 
 export const SChevronRightIcon = css`
     font-size: 22px;
     font-weight: 500;
+    cursor: pointer;
 `;
 
 export const SVisitedPlaceAddressText = css`
@@ -362,10 +367,12 @@ export const SVisitedInfoRightBox = css`
 export const SVisitedInfoStarIcon = css`
     font-size: 21px;
     color: #8f8f8f;
+    cursor: pointer;
 `;
 
 export const SVisitedInfoSaveText = css`
     margin-top: 6px;
     font-size: 11px;
     color: #8f8f8f;
+    cursor: pointer;
 `;

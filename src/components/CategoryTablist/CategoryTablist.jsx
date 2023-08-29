@@ -43,11 +43,18 @@ function CategoryTablist(props) {
 
     return (
         <div css={S.SContainer}>
-            {menus.map(menu => (
-                <div css={S.SMenuBox(location.pathname.startsWith(menu.path))} key={menu.id} onClick={() => {
-                    handleLinkClick(menu.path)
-                }}>{menu.name}</div>
-            ))}
+            <div css={S.SMenuBoxContainer}>
+                {menus.map(menu => (
+                    <div 
+                        css={S.SMenuBox(
+                            location.pathname.startsWith(menu.path) || (location.pathname === "/" && menu.id === 1)
+                            )} 
+                            key={menu.id} onClick={() => {
+                        handleLinkClick(menu.path)
+                    }}>{menu.name}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
