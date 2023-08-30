@@ -17,6 +17,7 @@ import loveIcon from "../../../assets/loveIcon.png";
 import sofaIcon from "../../../assets/sofaIcon.png";
 import { LiaSmile } from "react-icons/lia"
 import { CiStar } from "react-icons/ci"
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 
 function FeedContainer(props) {
     const navigate = useNavigate();
